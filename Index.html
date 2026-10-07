@@ -3,84 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Portfolio of Andreas, a Fullstack JavaScript Developer student in Stockholm."
+    >
+
     <title>Andreas | Developer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/portfolio.css">
 </head>
+
 <body>
+
     <header class="site-header">
-        <div class="header-container">
-            <a href="index.html" class="logo">andreas.dev</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#tech">Technologies</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+        <div class="container header-container">
+
+            <a class="logo" href="index.html" aria-label="Andreas portfolio home">
+                &lt;andreas /&gt;
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li>
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="tech-stack.html">Tech Stack</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </nav>
+
+            <div class="header-socials" aria-label="Social media links">
+
+                <a
+                    href="#"
+                    class="social-link"
+                    aria-label="GitHub"
+                >
+                    GitHub
+                </a>
+
+                <a
+                    href="#"
+                    class="social-link"
+                    aria-label="LinkedIn"
+                >
+                    LinkedIn
+                </a>
+
+            </div>
+
         </div>
     </header>
+
+
     <main>
-        <section id="home" class="hero-section">
-            <div class="hero-text">
-                <h1>Hi 👋,<br>My name is <span class="highlight">Andreas</span><br>I build things for web</h1>
-            </div>
-            <div class="hero-image">
-                <img src="bildpomig.png" alt="Profile photograph of Andreas">
-            </div>
-        </section>
-        <section id="tech" class="tech-section">
-            <h2>Technologies</h2>
-            <p class="tech-subtitle">Technologies I've been working with recently</p>
-            <div class="tech-grid">
-                <div class="tech-item"><span>HTML</span></div>
-                <div class="tech-item"><span>CSS</span></div>
-                <div class="tech-item"><span>Git</span></div>
-                <div class="tech-item"><span>VS Code</span></div>
-            </div>
-        </section>
-        <section id="projects" class="projects-section">
-            <h2>Projects</h2>
-            <p class="projects-subtitle">Things I've built so far</p>
-            <div class="projects-grid">
-                <article class="project-card">
-                    <img src="img/project1.jpg" alt="Preview of Project Title 1" class="project-img">
-                    <div class="project-content">
-                        <h3>Project Tile 1</h3>
-                        <p>This is sample content of the project description from Pawan's template.</p>
-                        <p class="tech-stack">Tech stack: HTML, CSS, JavaScript</p>
-                        <div class="project-links">
-                            <a href="#" target="_blank" rel="noopener">Live Preview</a>
-                            <a href="#" target="_blank" rel="noopener">View Code</a>
-                        </div>
+
+        <section class="hero">
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <h1 class="hero-title">
+                        Hi 👋,<br>
+                        My name is<br>
+                        <span class="gradient-text">Andreas</span><br>
+                        I build things for web
+                    </h1>
+
+                </div>
+
+
+                <div class="hero-image-wrapper">
+
+                    <div class="profile-border">
+
+                        <img
+                            class="profile-image"
+                            src="bildpomig.png"
+                            alt="Portrait of Andreas"
+                        >
+
                     </div>
-                </article>
+
+                </div>
+
             </div>
         </section>
-        <section id="about" class="about-section">
-            <h2>About Me</h2>
-            <p>Hello my name is Andreas</p>
-        </section>
+
     </main>
-    <footer id="contact" class="site-footer">
-        <div class="footer-container">
-            <div class="footer-top">
-                <p class="footer-logo">andreas.dev</p>
-                <div class="footer-contact-info">
-                    <a href="tel:0735438745">0735438745</a>
-                    <a href="mailto:andreas.backlund@chasacademy.com">andreas.backlund@chasacademy.com</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="social-links">
-                    <a href="#" target="_blank" rel="noopener">GitHub</a>
-                    <a href="#" target="_blank" rel="noopener">Twitter</a>
-                    <a href="#" target="_blank" rel="noopener">LinkedIn</a>
-                </div>
-            </div>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-container">
+
+            <p class="footer-credit">
+                Designed by
+                <span class="gradient-text">Pawan</span>
+                and built by
+                <span class="gradient-text">Andreas</span>
+            </p>
+
         </div>
+
     </footer>
 
 </body>

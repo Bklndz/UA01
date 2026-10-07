@@ -1,21 +1,39 @@
-@import url('https://googleapis.com');
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
 
 :root {
-    --bg-color: #191919;
-    --card-bg: #232323;
-    --text-main: #A7A7A7;
-    --text-heading: #FFFFFF;
-    --accent-color: #00DBDE;
-    --accent-gradient: linear-gradient(135deg, #00DBDE 0%, #FC00FF 100%);
-    
-    --font-primary: 'Poppins', sans-serif;
+    --color-background: #ffffff;
+    --color-heading: #42446e;
+    --color-text: #666666;
+    --color-dark: #191919;
+    --color-border: #ebeaed;
+    --color-card: #ffffff;
+
+    --color-blue: #13b0f5;
+    --color-purple: #e70faa;
+
+    --gradient: linear-gradient(
+        90deg,
+        var(--color-blue) 0%,
+        var(--color-purple) 100%
+    );
+
+    --font-heading: "Poppins", sans-serif;
+    --font-body: "Poppins", sans-serif;
+
+    --container-width: 1200px;
+}
+
+/* ---------- RESET ---------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html {
@@ -23,21 +41,85 @@ html {
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-main);
-    font-family: var(--font-primary);
-    line-height: 1.6;
-    padding: 0 20px;
+    min-height: 100vh;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.5;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
 }
 
 a {
-    text-decoration: none;
     color: inherit;
-    transition: color 0.3s ease;
+    text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+/* ---------- ACCESSIBILITY ---------- */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--color-blue);
+    outline-offset: 4px;
+}
+
+/* ---------- SHARED LAYOUT ---------- */
+
+.container {
+    width: min(100% - 40px, var(--container-width));
+    margin-inline: auto;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+
+h1,
+h2,
+h3 {
+    color: var(--color-heading);
+    font-family: var(--font-heading);
+    line-height: 1.2;
+}
+
+.gradient-text {
+    display: inline-block;
+
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---------- SCREEN READER ---------- */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
