@@ -35,7 +35,6 @@
 
             <nav class="main-nav" aria-label="Main navigation">
                 <ul class="nav-list">
-
                     <li>
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -45,7 +44,11 @@
                     </li>
 
                     <li>
-                        <a class="nav-link active" href="tech-stack.html">
+                        <a
+                            class="nav-link active"
+                            href="tech-stack.html"
+                            aria-current="page"
+                        >
                             Tech Stack
                         </a>
                     </li>
@@ -57,7 +60,6 @@
                     <li>
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-
                 </ul>
             </nav>
 
@@ -67,81 +69,90 @@
 
     <main class="page-main">
 
-        <div class="container">
+        <section class="container" aria-labelledby="tech-heading">
 
-            <section aria-labelledby="tech-heading">
+            <div class="tech-header">
 
-                <div class="tech-header">
+                <h1 id="tech-heading" class="page-heading">
+                    My Tech Stack
+                </h1>
 
-                    <h1 id="tech-heading" class="page-heading">
-                        My Tech Stack
-                    </h1>
+                <p class="page-subtitle">
+                    Technologies I've been working with recently
+                </p>
 
-                    <p class="page-subtitle">
-                        Technologies I've been working with recently
-                    </p>
-
-                </div>
+            </div>
 
 
-                <div class="tech-grid">
+            <div class="tech-grid">
 
-                    <article class="tech-item">
+                <!-- HTML -->
 
-                        <div class="tech-icon" aria-hidden="true">
-                            HTML
-                        </div>
+                <article class="tech-item">
 
-                        <h2 class="tech-name">
-                            HTML5
-                        </h2>
+                    <div class="html-logo" aria-hidden="true">
+                        <span>5</span>
+                    </div>
 
-                    </article>
+                    <h2 class="tech-name">
+                        HTML5
+                    </h2>
 
-
-                    <article class="tech-item">
-
-                        <div class="tech-icon" aria-hidden="true">
-                            CSS
-                        </div>
-
-                        <h2 class="tech-name">
-                            CSS3
-                        </h2>
-
-                    </article>
+                </article>
 
 
-                    <article class="tech-item">
+                <!-- CSS -->
 
-                        <div class="tech-icon" aria-hidden="true">
-                            FLEX
-                        </div>
+                <article class="tech-item">
 
-                        <h2 class="tech-name">
-                            Flexbox
-                        </h2>
+                    <div class="css-logo" aria-hidden="true">
+                        <span>3</span>
+                    </div>
 
-                    </article>
+                    <h2 class="tech-name">
+                        CSS3
+                    </h2>
+
+                </article>
 
 
-                    <article class="tech-item">
+                <!-- FLEXBOX -->
 
-                        <div class="tech-icon" aria-hidden="true">
-                            GRID
-                        </div>
+                <article class="tech-item">
 
-                        <h2 class="tech-name">
-                            CSS Grid
-                        </h2>
+                    <div class="layout-logo flex-logo" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
 
-                    </article>
+                    <h2 class="tech-name">
+                        Flexbox
+                    </h2>
 
-                </div>
+                </article>
 
-            </section>
 
-        </div>
+                <!-- GRID -->
+
+                <article class="tech-item">
+
+                    <div class="layout-logo grid-logo" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <h2 class="tech-name">
+                        CSS Grid
+                    </h2>
+
+                </article>
+
+            </div>
+
+        </section>
 
     </main>
 
@@ -162,4 +173,5 @@
     </footer>
 
 </body>
+
 </html>
