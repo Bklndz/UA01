@@ -520,3 +520,134 @@
         gap: 45px;
     }
 }
+/* ==================================================
+   MOBILE DESIGN ADJUSTMENTS
+   ================================================== */
+
+@media (max-width: 767px) {
+
+    /* ---------- HEADER ---------- */
+
+    .site-header {
+        padding: 20px 0;
+    }
+
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .main-nav {
+        width: auto;
+    }
+
+    .nav-list {
+        gap: 12px;
+    }
+
+    .nav-link {
+        font-size: 0.72rem;
+    }
+
+    .header-socials {
+        display: none;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        min-height: auto;
+        padding: 90px 0 120px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 45px;
+    }
+
+    .hero-content {
+        order: 1;
+        text-align: left;
+    }
+
+    .hero-image-wrapper {
+        order: 2;
+        align-self: flex-start;
+    }
+
+    .hero-title {
+        font-size: 2.4rem;
+        line-height: 1.25;
+        letter-spacing: -0.5px;
+    }
+
+    .profile-border {
+        width: 170px;
+        height: 170px;
+        padding: 5px;
+    }
+
+    .profile-image {
+        border-width: 4px;
+    }
+
+
+    /* ---------- GENERAL PAGES ---------- */
+
+    .page-main {
+        padding: 60px 0 90px;
+    }
+
+    .page-heading {
+        font-size: 2rem;
+    }
+
+    .section-heading {
+        font-size: 1.7rem;
+    }
+
+
+    /* ---------- TECH STACK ---------- */
+
+    .tech-header {
+        margin-bottom: 45px;
+    }
+
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 25px;
+    }
+
+
+    /* ---------- PROJECTS ---------- */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- CONTACT ---------- */
+
+    .contact-main {
+        min-height: 500px;
+        padding: 60px 0;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .site-footer {
+        padding: 30px 0;
+    }
+}
