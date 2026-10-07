@@ -757,3 +757,126 @@
         padding: 30px 0;
     }
 }
+/* ==================================================
+   PROJECT IMAGE DESIGNS
+   ================================================== */
+
+.project-image {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+/* Project 1 */
+
+.project-image-one {
+    background:
+        linear-gradient(
+            135deg,
+            #13b0f5,
+            #e70faa
+        );
+}
+
+/* Project 2 */
+
+.project-image-two {
+    background:
+        linear-gradient(
+            135deg,
+            #42446e,
+            #13b0f5
+        );
+}
+
+/* Project 3 */
+
+.project-image-three {
+    background:
+        linear-gradient(
+            135deg,
+            #e70faa,
+            #42446e
+        );
+}
+
+/* Project 4 */
+
+.project-image-four {
+    background:
+        linear-gradient(
+            135deg,
+            #13b0f5,
+            #42446e
+        );
+}
+
+/* Project 5 */
+
+.project-image-five {
+    background:
+        linear-gradient(
+            135deg,
+            #42446e,
+            #e70faa
+        );
+}
+
+/* Project 6 */
+
+.project-image-six {
+    background:
+        linear-gradient(
+            135deg,
+            #e70faa,
+            #13b0f5
+        );
+}
+
+
+/* Decorative browser window */
+
+.project-image::before {
+    content: "";
+    position: absolute;
+
+    width: 72%;
+    height: 65%;
+
+    top: 18%;
+    left: 14%;
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #f5f5f5 0 18%,
+            #ffffff 18% 100%
+        );
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Decorative website content */
+
+.project-image::after {
+    content: "";
+
+    position: absolute;
+
+    width: 50%;
+    height: 8px;
+
+    top: 48%;
+    left: 25%;
+
+    border-radius: 10px;
+
+    background: rgba(66, 68, 110, 0.35);
+
+    box-shadow:
+        0 18px 0 rgba(66, 68, 110, 0.2),
+        0 36px 0 rgba(66, 68, 110, 0.15);
+}
